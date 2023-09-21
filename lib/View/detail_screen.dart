@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 
 class DetailScreen extends StatefulWidget {
 
-  String image ;
-  String  name ;
-  int totalCases , totalDeaths, totalRecovered , active , critical, todayRecovered , test;
+ final String image ;
+ final  String  name ;
+ final int totalCases , totalDeaths, totalRecovered , active , critical, todayRecovered , test;
 
   DetailScreen({
     required this.image ,
@@ -77,7 +77,7 @@ class _DetailScreenState extends State<DetailScreen> {
 
 
 class ReusableRow extends StatelessWidget {
-  String title, value ;
+final   String title, value ;
   ReusableRow({Key? key , required this.title, required this.value}) : super(key: key);
 
   @override

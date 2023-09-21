@@ -147,7 +147,7 @@ class _WorldStatesState extends State<WorldStates> with TickerProviderStateMixin
 }
 
 class ReusableRow extends StatelessWidget {
-  String title, value ;
+ final String title, value ;
    ReusableRow({Key? key , required this.title, required this.value}) : super(key: key);
 
   @override
